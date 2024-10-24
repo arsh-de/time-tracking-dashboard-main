@@ -7,8 +7,8 @@ fetch("data.json")
         cards.forEach((card, index) => {
             if (data[index]) { // Check if data exists for this index
                 const title = card.querySelector(".title");
-                const current = card.querySelector("#current-hours");
-                const previous = card.querySelector("#previous-hours");
+                const current = card.querySelector(".current-hours");
+                const previous = card.querySelector(".previous-hours");
 
                 if (title && current && previous) { // Ensure elements exist
                     title.textContent = data[index].title;
@@ -26,8 +26,8 @@ fetch("data.json")
                 const timeframe = link.getAttribute("data-timeframe");
 
                 cards.forEach((card, index) => {
-                    const current = card.querySelector("#current-hours");
-                    const previous = card.querySelector("#previous-hours");
+                    const current = card.querySelector(".current-hours");
+                    const previous = card.querySelector(".previous-hours");
 
                     if (data[index].timeframes[timeframe]) { // Check if timeframe data exists
                         current.textContent = data[index].timeframes[timeframe].current + "hrs";
