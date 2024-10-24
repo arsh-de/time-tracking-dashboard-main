@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Time Tracking Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+
+</head>
+
+<body>
+
+  <main>
+
+    <section class="header">
+
+      <div class="profile">
+        <div class="profile-img">
+          <img src=" images/image-jeremy.png" alt="Jeremy image">
+        </div>
+        <div class="profile-info">
+          <span class="report">Report for</span>
+          <span class="profile-name">Jeremy Robson</span>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <a href="#" data-timeframe="daily">Daily</a>
+        <a href="#" data-timeframe="weekly">Weekly</a>
+        <a href="#" data-timeframe="monthly">Monthly</a>
+      </div>
+
+    </section>
+
+    <div id="work" class="card">
+      <div class="card-details">
+        <div class="titles">
+          <span class="title">Work</span>
+          <span class="three-dots">...</span>
+        </div>
+        <div class="hours">
+          <span id="current-hours">32hrs <!-- weekly --></span>
+          <span id="previous-hours">Last Week - 36hrs <!-- weekly --></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="play" class="card">
+      <div class="card-details">
+        <div class="titles">
+          <span class="title">Play</span>
+          <span class="three-dots">...</span>
+        </div>
+        <div class="hours">
+          <span id="current-hours">10hrs <!-- weekly --></span>
+          <span id="previous-hours">Last Week - 8hrs <!-- weekly --></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="study" class="card">
+      <div class="card-details">
+        <div class="titles">
+          <span class="title">Study</span>
+          <span class="three-dots ">...</span>
+        </div>
+        <div class="hours">
+          <span id="current-hours">4hrs <!-- weekly --></span>
+          <span id="previous-hours">Last Week - 7hrs <!-- weekly --></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="exercise" class="card">
+      <div class="card-details">
+        <div class="titles">
+          <span class="title">Exercise</span>
+          <span class="three-dots">...</span>
+        </div>
+        <div class="hours">
+          <span id="current-hours">4hrs <!-- weekly --></span>
+          <span id="previous-hours">Last Week - 5hrs <!-- weekly --></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="social" class="card">
+      <div class="card-details">
+        <div class="titles">
+          <span class="title">Social</span>
+          <span class="three-dots">...</span>
+        </div>
+        <div class="hours">
+          <span id="current-hours">5hrs <!-- weekly --></span>
+          <span id="previous-hours">Last Week - 10hrs <!-- weekly --></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="self-care" class="card">
+      <div class="card-details">
+        <div class="titles">
+          <span class="title">Self-care</span>
+          <span class="three-dots">...</span>
+        </div>
+        <div class="hours">
+          <span id="current-hours">2hrs <!-- weekly --></span>
+          <span id="previous-hours">Last Week - 2hrs <!-- weekly --></span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
