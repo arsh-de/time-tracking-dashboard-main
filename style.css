@@ -129,13 +129,13 @@ img {
     align-items: center;
 }
 
-#current-hours {
+.current-hours {
     font-size: 1.75rem;
     color: white;
     font-weight: 300;
 }
 
-#previous-hours {
+.previous-hours {
     color: var(--Pale-Blue);
     font-size: small;
     font-weight: 300;
@@ -221,7 +221,7 @@ img {
         align-items: flex-start;
     }
 
-    #current-hours {
+    .current-hours {
         font-size: 3.5rem;
     }
 
